@@ -1,9 +1,0 @@
-@font-face{
-    font-family: 'kai';
-    font-size: medium;
-    src: url('../font/kai.ttf') format("truetype");
-}
-
-body {
-    font-family: "kai", "Microsoft YaHei";
-}
