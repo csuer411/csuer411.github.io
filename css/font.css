@@ -1,0 +1,9 @@
+@font-face{
+    font-family: 'FiraCode';
+    font-display: swap;
+    src: url('../font/文鼎PL简报宋.ttf') format("truetype");
+}
+
+body {
+    font-family: "Microsoft YaHei", 'wen';
+}
