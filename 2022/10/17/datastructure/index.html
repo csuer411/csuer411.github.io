@@ -197,14 +197,14 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://new-web-comment.vercel.app/',
+      envId: 'https://twikoo.micono.xyz',
       region: ''
     }, null))
   }
 
   const getCount = () => {
     twikoo.getCommentsCount({
-      envId: 'https://new-web-comment.vercel.app/',
+      envId: 'https://twikoo.micono.xyz',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
