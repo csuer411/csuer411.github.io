@@ -215,14 +215,14 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo.micono.xyz',
+      envId: 'https://new-web-comment.vercel.app/',
       region: ''
     }, null))
   }
 
   const getCount = () => {
     twikoo.getCommentsCount({
-      envId: 'https://twikoo.micono.xyz',
+      envId: 'https://new-web-comment.vercel.app/',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
