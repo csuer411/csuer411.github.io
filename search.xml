@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Linux系统常用命令</title>
+      <link href="/2022/12/19/linux%E5%91%BD%E4%BB%A4/"/>
+      <url>/2022/12/19/linux%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><h3 id="0-常见Linux命令">0.常见Linux命令</h3><p><code>mkdir</code> 创建目录</p><p><code>cd</code> 转换工作目录</p><p><code>rm</code> 删除 <code>-r</code> 参数表示递归</p><p><code>cp</code> 复制</p><p><code>mv</code> 移动或重命名</p><p><code>ln</code> 或 <code>ln -s </code> 创造硬链接或符号链接 硬链接不能链接目录，常用符号链接</p><p><code>file</code> 描述文件</p><p><code>ls</code> <code>tree</code> 列出文件 <code>-l</code> <code>-a</code> 参数</p><p><code>alias</code> 命名</p><p><code>which</code> 查询路径</p><h3 id="1-IO重定向">1.IO重定向</h3><p>一般来说，输入输出都由 <code>stdin</code> <code>stdout</code> 或 <code>stderr</code> 直接读取。下列命令可改变IO读取方式</p><p>如 <code>ls -l /usr/bin &gt; ls-outputs.txt</code> ps:清空文件技巧 <code> &gt; ls-output.txt</code> 错误信息不会被定向到输出。<code>&gt;&gt;</code> 代表追加，而不会清空之前的内容。</p><p>如何定向标准错误输出</p><p>标准错误输出重定向没有专用的重定向操作符。为了重定向标准错误输出，我们必须用到其文件描述符。 一个程序的输出会流入到几个带编号的文件中。这些文件的前 三个称作标准输入、标准输出和标准错误输出，shell 内部分别将其称为文件描述符0、1和2。shell 使用文件描述符提供 了一种表示法来重定向文件。因为标准错误输出和文件描述符2一样，我们用这种 表示法来重定向标准错误输出：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[mico@linuxbox ~]$ <span class="built_in">ls</span> -l /bin/usr 2&gt; ls-error.txt</span><br></pre></td></tr></table></figure><p>如何将二者重定向至同一文件</p><p><code>ls -l /bin/usr &amp;&gt;&gt; ls-outputs.txt</code></p><h4 id="TIP">TIP</h4><p>一行执行多个命令可使用 <code>；</code> 分隔</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux OS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>动手学深度学习树叶图片分类实战</title>
       <link href="/2022/11/17/leave_classify/"/>
       <url>/2022/11/17/leave_classify/</url>
