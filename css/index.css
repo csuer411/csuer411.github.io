@@ -20390,17 +20390,18 @@ html.hide-aside .layout > div:first-child {
 }
 
 #aside-content .card-widget#card-wechat {
-  background: #57bd6a;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 0;
   cursor: pointer;
   border: none;
-  height: 110px;
+  height: auto;
 }
+
 [data-theme="dark"] #aside-content .card-widget#card-wechat {
-  background-color: #121121;
+  background-color: #ffffff;
   border: var(--style-border);
 }
 
@@ -20412,9 +20413,10 @@ html.hide-aside .layout > div:first-child {
 #flip-wrapper {
   position: relative;
   width: 235px;
-  height: 110px;
+  height: 200px;
   z-index: 1;
 }
+
 #flip-content {
   width: 100%;
   height: 100%;
@@ -20422,6 +20424,7 @@ html.hide-aside .layout > div:first-child {
   transform-style: preserve-3d;
   transition: cubic-bezier(0, 0, 0, 1.29) 0.3s;
 }
+
 #aside-content #flip-wrapper #flip-content .face {
   position: absolute;
   width: 100%;
@@ -20438,11 +20441,11 @@ html.hide-aside .layout > div:first-child {
   box-sizing: border-box;
   background-size: 100%;
 }
+
 #flip-wrapper:hover #flip-content {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-
 /* 分类目录条、标签目录条 */
 #catalog-bar {
   border-radius: var(--anzhiyu-border-radius);
